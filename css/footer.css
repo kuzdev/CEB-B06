@@ -1,0 +1,195 @@
+.footer{
+    background-color: #202020;
+    color:silver;
+    position: relative;
+    height:300px;
+    padding: 20px;
+  }
+  .links:hover{
+    transition:0.5s;
+    color:white;
+  }
+  .fa{
+    color:white;
+  }
+  .footer .footer-content{
+    border: 1px solid #202020;
+    height: 300px;
+    display:flex;
+  }
+  
+  .footer .footer-content .footer-section{
+    flex:1;
+    border: 1px solid #202020;
+    }
+  .about{
+      padding-top:20px;
+  }
+  .about h2{
+    font-family: arvo;
+  }
+  .about p{
+      font-size:18px;
+      padding-bottom:5px;
+       font-family: Arial, Helvetica, sans-serif;
+  }
+  .about .office{
+    padding-top:20px;
+  }
+  span{
+    display: block;
+  }
+  .footer-section li{
+    padding-left:20px;
+    color:silver;
+    padding-bottom:10px;
+    font-size:20px;
+    font-family: monospace;
+  }
+  .links h2{
+    text-align: center;
+      padding-top:20px;
+      font-family: arvo;
+    }
+  .contact-form .contact{
+    text-align: right;
+    padding-top:20px;
+    padding-right:20px;
+    font-size:20px;
+    font-weight:bold;
+    font-family:arvo;
+  
+  }
+  .contact-form .sosial{
+    padding-top:20px;
+    text-align: right;
+    padding-right:20px;
+    font-size:20px;
+  }
+  .footer-bottom{
+    background:#343a40;
+    text-align:center;
+    color:#686868;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    padding-top:20px;
+    position: absolute;
+  }
+  
+
+  @media all and (max-width:1024px){
+    .nav-links{
+           width: 60%;
+       }
+   .about .office p{
+     padding-top:0;
+     font-size:15px;
+   }
+   .about p{
+       font-size:15px;
+       padding-bottom:5px;
+       text-align:left;
+      margin-right:115px;
+   }
+   .contact-form .contact{
+     text-align: right;
+     padding-top:20px;
+     padding-right:20px;
+     font-size:15px;
+     font-weight:bold;
+   
+   }
+   .contact-form .sosial{
+     padding-top:20px;
+     text-align: right;
+     padding-right:20px;
+     font-size:15px;
+   }
+   .links{
+     padding-bottom:0px;
+   }
+   
+   .footer-bottom{
+     height:40px;
+     bottom:0px;
+     left:0px;
+     padding-top:20px;
+     position: absolute;
+   }
+   }
+   
+   @media all and (max-width:570px){
+       body{
+          overflow-x: hidden;
+       }
+       .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+       }
+       .nav-links li{
+           opacity: 4px;
+       }
+       .burger{
+           display: block;
+       }
+       .nav-active{
+           transform: translateX(0%);
+       }
+       @keyframes navLinkFade {
+           from{
+               opacity: 0;
+               transform: translateX(50px);
+           }
+           to{
+               opacity: 1;
+               transform: translateX(0px);
+           }
+       }
+       .toggle line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+       }
+       .toggle line2{
+        opacity: 0;
+       }
+       .toggle line3{
+        transform: rotate(-45deg) translate(-5px, -6px);
+       }
+       .footer{
+         width:100%;
+       }
+      .links{
+         display:none;
+       }
+      .about{
+        display:none;
+     }
+   
+       .office{
+         display:none;
+       }
+       .contact-form .contact{
+     text-align:left;
+     padding-top:20px;
+     padding-right:20px;
+     font-size:15px;
+     font-weight:bold;
+     }
+     .contact-form .sosial{
+     text-align:left;
+     padding-top:20px;
+     padding-right:20px;
+     font-size:15px;
+     font-weight:bold;
+     }
+   }
+   

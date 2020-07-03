@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: black;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color: aliceblue;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+
+.pic {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 35px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+ .top-wrapper h1 {
+   font-size: 32px;
+ }
+ 
+ .top-wrapper h2 {
+   font-size: 20px;
+ }
+ .message-wrapper h2 {
+  font-size: 20px;
+}
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  
+  .lesson {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+ .facebook {
+   margin-bottom: 10px;
+ }
+  .header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .top-wrapper {
+    text-align: left;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .message-wrapper h2 {
+  font-size: 20px;
+}
+}

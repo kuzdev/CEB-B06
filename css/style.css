@@ -1,0 +1,122 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.maps{
+    text-align: center;
+    padding: 20px;
+}
+
+.maps iframe{
+    border-radius: 5%;
+    margin: 5 solid grey;
+    margin-bottom: 20px;}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: cornflowerblue;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.logo{
+    color: rgb(226, 226, 226); /*warna untuk The navbar*/
+    text-transform: uppercase;
+    letter-spacing: 5px;/*untuk jarak text pada the navbar*/
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    /* position: fixed; */
+    top: 0;
+    z-index: 10;
+    background-color: cornflowerblue;
+}
+.nav-links li{
+    list-style: none;/*Menghilangkan titik*/
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;/*dengan ini burger nya ilang*/
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media all and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media all and (max-width:760px){
+    body{
+       overflow-x: hidden;
+    }
+    .slider{
+        overflow: hidden;
+        height: 100%;
+        
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 4px;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toggle line1{
+     transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle line2{
+     opacity: 0;
+    }
+    .toggle line3{
+     transform: rotate(-45deg) translate(-5px, -6px);
+    }
+}
