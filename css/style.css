@@ -1,0 +1,21 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.maps{
+    text-align: center;
+    padding: 20px;
+}
+
+.maps iframe{
+    border-radius: 5%;
+    margin: 5 solid grey;
+    margin-bottom: 20px;
+}
