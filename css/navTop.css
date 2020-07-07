@@ -1,24 +1,3 @@
-
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
-.maps{
-    text-align: center;
-    padding: 20px;
-}
-
-.maps iframe{
-    border-radius: 5%;
-    margin: 5 solid grey;
-    margin-bottom: 20px;}
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -26,7 +5,9 @@ nav{
     min-height: 8vh;
     background-color: cornflowerblue;
     font-family: 'Poppins', sans-serif;
-    
+    top: 0;
+    position:fixed;
+    z-index:10;
 }
 .logo{
     color: rgb(226, 226, 226); /*warna untuk The navbar*/
