@@ -2,7 +2,7 @@
 	overflow: hidden;
 	height: 400px;
 	background-color: black;
-	
+	padding-top:52px;
 }
  
 .slider figure div{
@@ -14,7 +14,6 @@
 	width: 100%;
 	float: left;
 	margin: 0 auto;
-	padding-top:52px;
 }
  
 .slider figure{
