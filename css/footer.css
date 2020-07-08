@@ -2,7 +2,7 @@
     background-color: #202020;
     color:silver;
     position: relative;
-    height:300px;
+    height:auto;
     padding: 20px;
   }
   .links:hover{
