@@ -106,6 +106,9 @@ a {
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+  .heading{
+  padding:15px;
+  }
   
   .lesson {
     width: 100%;
