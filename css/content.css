@@ -107,7 +107,7 @@ a {
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
   .heading{
-  padding:15px;
+  padding:10px;
   }
   
   .lesson {
