@@ -114,9 +114,12 @@
      height:40px;
      bottom:0px;
      left:0px;
-     padding-top:20px;
+     padding:20px;
      position: absolute;
    }
+   .footer-bottom p{
+   padding-bottom:10px;
+      }
    }
    
    @media all and (max-width:570px){
